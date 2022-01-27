@@ -1,0 +1,29 @@
+name: Test Code
+
+on:
+  pull_request:
+    branches: [main]
+
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2.4.0
+
+      - name: Set up Node
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version: 'lts/galium'
+
+      - name: Install dependencies (Yarn)
+        uses: bahmutov/npm-install@v1.7.11
+        with:
+          install-command: yarn --frozen-lockfile --check-files --silent
+
+      - name: Build
+        run: yarn test:ci
