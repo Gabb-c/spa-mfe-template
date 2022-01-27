@@ -25,5 +25,5 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
 
-      - name: Build
+      - name: Test
         run: yarn test:ci
