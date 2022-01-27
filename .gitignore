@@ -66,8 +66,8 @@ tsconfig.tsbuildinfo
 dist
 
 # Editor directories and files
+# .vscode
 .idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
