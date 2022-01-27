@@ -1,0 +1,9 @@
+{
+  "src/**/*.{js,ts,tsx}": [
+    "eslint src --ext js,jsx,ts,tsx --fix",
+    "prettier 'src/**/*.[jt]s?(x)' --write",
+    "git add ."
+  ],
+  "**/*": ["prettier-quick --staged"],
+  "package.json": ["sort-package-json package.json", "git add ."]
+}
