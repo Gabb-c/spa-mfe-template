@@ -4,5 +4,6 @@
     "prettier 'src/**/*.[jt]s?(x)' --write",
     "git add ."
   ],
+  "**/*": ["pretty-quick --staged"],
   "package.json": ["sort-package-json package.json", "git add ."]
 }
