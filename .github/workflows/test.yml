@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2.5.1
         with:
-          node-version: 'lts/gallium'
+          node-version-file: '.nvmrc'
 
       - name: Install dependencies (Yarn)
         uses: bahmutov/npm-install@v1.7.11
