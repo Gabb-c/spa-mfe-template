@@ -1,7 +1,46 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
   "extends": [
-    "ts-react-important-stuff",
-    "plugin:prettier/recommended"
+    "airbnb-typescript",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/recommended",
+    "plugin:promise/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:import/recommended"
   ],
-  "parser": "@babel/eslint-parser"
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json"
+  },
+  "plugins": [
+    "prettier",
+    "@typescript-eslint",
+    "jest",
+    "eslint-comments",
+    "promise",
+    "unicorn",
+    "import"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-use-before-define": "off",
+    "eslint-comments/no-unused-disable": "error",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/no-array-for-each": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off"
+  }
 }
