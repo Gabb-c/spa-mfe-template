@@ -2,16 +2,26 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "allowJs": false,
+    "declarationDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true
   },
   "files": ["src/mfe-template.tsx"],
   "include": ["src/**/*"],
   "exclude": [
     "node_modules",
+    "dist",
     "**/*.spec.ts",
+    "**/*.spec.js",
     "**/*.spec.tsx",
+    "**/*.spec.jsx",
     "**/*.test.ts",
-    "**/*.spec.tsx",
-    "**/__tests__/**/*"
+    "**/*.test.js",
+    "**/*.test.tsx",
+    "**/*.test.jsx",
+    "src/__tests__/**/*"
   ]
 }
