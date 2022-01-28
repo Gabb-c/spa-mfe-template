@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import singleSpaReact, { ReactAppOrParcel } from 'single-spa-react';
-import Root from './root.component';
+import singleSpaReact from 'single-spa-react';
+import { Root } from './root-component';
 
-const lifecycles: ReactAppOrParcel<unknown> = singleSpaReact({
+const lifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: Root,
