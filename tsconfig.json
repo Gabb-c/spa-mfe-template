@@ -4,7 +4,7 @@
     "jsx": "react-jsx",
     "allowJs": false,
     "declarationDir": "dist",
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true,
     "incremental": true,
     "forceConsistentCasingInFileNames": true
