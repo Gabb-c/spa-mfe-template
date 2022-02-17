@@ -17,7 +17,7 @@ export const AppRoutes: React.FC = (): JSX.Element => {
           }
         />
         <Route
-          path="/home"
+          path="/"
           element={
             <Suspense fallback={<>...</>}>
               <Home />
