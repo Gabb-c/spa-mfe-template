@@ -37,7 +37,7 @@
     "@babel/runtime": "^7.17.7",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
-    "@swc/core": "^1.2.158",
+    "@swc/core": "^1.2.196",
     "@swc/jest": "^0.2.20",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
